@@ -1,0 +1,184 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 50vh; /* Height of the hero section */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height of the parent section */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  position: absolute; /* Absolute positioning to cover the parent */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Places the image behind the text */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Full height of the hero section */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Adjust size as needed */
+  margin: 0;
+  color: #fff; /* Highlight color */
+}
+
+
+
+
+/* Service Content Section */
+.service-content {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000035;
+}
+
+.content-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000035;
+  margin-bottom: 1rem;
+}
+
+/* Service Item */
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust number of columns as needed */
+  gap: 1rem;
+  max-width: 1200px; /* Adjust this value if needed */
+  width: 100%;
+  
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: #000035 4px solid;
+}
+
+.service-item:hover {
+  background-color: #ffea00;
+  color: #000;
+}
+
+.service-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limit maximum height if needed */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+
+.feature-section {
+  position: relative;
+  height: 50vh; /* Adjust the height as needed */
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* Position it absolutely to cover the section */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensures the image is below the overlay */
+  
+}
+
+.feature-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: center;
+}
+
+.feature-overlay {
+  width: 50%;
+  height: 80%;
+  position: relative;
+  z-index: 2; /* Ensures the text is above the image */
+  background:#ffea00; /* Semi-transparent background for readability */
+  color: #000035; /* White text color */
+  padding: 2rem;
+  margin: 20px;
+  border-radius: 10px; /* Optional: to add rounded corners to the text container */
+}
+
+.feature-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color:#000035; /* Adjust color as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.feature-button:hover {
+  background-color: #f1c40f; /* Adjust color as needed */
+  color: #333;
+}

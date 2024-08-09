@@ -1,0 +1,28 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.counter__title {
+  font-size: 1rem;
+  color: #000035;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.counter__title:hover {
+  color: rgb(255, 255, 255);
+}
+
+.counter__value {
+  font-size: 2.5rem;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.counter__value:hover {
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,147 @@
+
+
+.Counter{
+  background:  #ffea00;
+  margin: 20px;
+  border-radius: 10px;
+  border-bottom: 5px solid #000035;
+}
+/* Project Page Styling */
+
+/* Counter Section */
+.Counter {
+  background: #ffea00;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 10px;
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+/* Project Content Section */
+.project-content {
+  padding: 2rem;
+}
+
+.content-container {
+  text-align: left;
+  margin-bottom: 2rem;
+  background: #ffea00;
+  padding: 2rem;
+  border-radius: 10px;
+  border-bottom: 5px solid #000035;
+}
+
+.content-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000035;
+}
+
+.content-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000035;
+  margin-bottom: 1rem;
+}
+
+/* Why Choose Us Section */
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: #000035;
+}
+
+h2 + p {
+  margin-bottom: 0;
+}
+
+.project-content section.Counter {
+  margin-top: 2rem;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  object-fit: cover;
+}
+
+.service-item:hover {
+  background-color: #ffea00;
+  color: #000;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+}
+
+/* Hover Effects for Project and Why Choose Us Sections */
+.project-content h1:hover,
+.project-content h2:hover {
+  background-color: #000035; /* Dark background on hover */
+  color: #ffea00; /* Text color on hover */
+}
+
+.project-content .content-container:hover {
+  border-bottom: 5px solid #0afffb;
+}

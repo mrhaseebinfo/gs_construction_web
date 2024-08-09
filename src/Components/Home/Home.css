@@ -1,0 +1,322 @@
+/* Home.css */
+
+.home-section {
+  background-color: #000035;
+  margin-top: 5%;
+  padding-top:5px ;
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjusted height to 60% of the viewport height */
+  overflow: hidden; /* Hide any overflow to keep the layout clean */
+
+}
+
+.company-name-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 10; /* Ensure it's above the slider images */
+}
+
+.company-name {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+  margin: 0;
+}
+
+.slider-item {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+}
+
+.slider-image {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  display: block; /* Remove bottom space caused by inline-block */
+  border-radius: 20px;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  border-radius: 20px; /* Optional */
+}
+.slider-content:hover{
+  color: #ffea00;
+}
+
+.company-description {
+  font-size: 1.5rem; /* Adjust as needed */
+  margin: 0;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  background-color:#000035; /* WhatsApp green color */
+  color: #fff; /* Text color */
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.help-button:hover {
+  background-color:  #ffea00; /* Darker green on hover */
+  color: black;
+  font-size: 1rem;
+}
+
+.help-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.button-text {
+  display: inline-block;
+}
+
+
+/* Section 2 */
+/* Flexbox Layout */
+/* Grid Layout */
+.grid-container {
+  background:  rgba(2, 59, 158, 0.5) ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  grid-template-rows: auto 1fr; /* First row is auto-height, second row takes remaining space */
+  align-items: center; /* Center content vertically */
+  justify-items: center; /* Center content horizontally */
+  height: 70vh; /* Full viewport height, adjust as needed */
+  padding: 20px; /* Optional padding */
+  text-align: center;
+}
+
+.text {
+  margin-left: 20px;
+  padding: 5%;
+  font-size: 3rem; /* Adjust text size */
+  margin-bottom: 20px; /* Space between text and image */
+  color: #ffea00; /* Text color */
+  background:  rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.text .logo{
+  color: black;
+}
+.text:hover{
+  color: black;
+  .logo:hover{
+    color: #ffea00;
+  }
+}
+
+/* Container for centering the image */
+.zoom-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height or adjust as needed */
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+}
+
+/* Image container */
+.image {
+  width: 50%; /* Adjust width as needed */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* Image styling */
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for zoom effect */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 20px;
+}
+
+/* Hover effect to zoom in and zoom out */
+.zoom-image-container:hover .image img {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Animation loop for continuous zoom in and out */
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Apply animation to the image */
+.zoom-image-container .image img {
+  animation: zoomInOut 5s infinite; /* Continuous zoom in and out effect */
+}
+
+
+
+
+
+/* Section 3 */
+.section-background {
+  background-image: url('../../assets/image10.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  position: relative;
+  color: #8f8fc9;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 40%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 2rem;
+}
+.text-content-center{
+  position: absolute;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: #ffea00;
+}
+.text-content-center:hover{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+.text-content :hover{
+  color: #ffea00;
+}
+
+.text-content h3 {
+  margin-top: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  flex: 1;
+  max-width: 55%;
+}
+
+.image-item {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set a fixed height to maintain layout */
+  overflow: hidden;
+  border-radius: 20px;
+  perspective: 1000px; /* Adds perspective for the flip effect */
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Enables 3D effects */
+  transition: transform 0.6s; /* Smooth transition for flip effect */
+}
+
+.image-item:hover .image-wrapper {
+  transform: rotateY(180deg); /* Rotate the image on hover */
+}
+
+.image-front, .image-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back face when facing away */
+}
+
+.image-front {
+  background-size: cover;
+  background-position: center;
+}
+
+.image-back {
+  background: rgba(0, 0, 0, 0.7); /* Overlay color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transform: rotateY(180deg); /* Ensure overlay matches the flip effect */
+  text-align: center;
+}
+
+.image-back h4, .image-back p {
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.4; /* Improve readability */
+}
+
+.image-back h4 {
+  font-size: 1.2rem;
+}
+
+.image-back p {
+  font-size: 1rem;
+}
+
+
+/* Counter Section */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%); /* Start from right outside */
+  }
+  100% {
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+.home {
+  padding: 1rem;
+  background-color: #ffea00;
+  color: black;
+  border-radius: 100px 0 100px 0;
+  margin: 3px;
+  animation: slideRightToLeft 2s ease-in-out forwards; /* Adjust the duration as needed */
+}
+
+
+.home__counters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+/* Message */
+
+/*  */

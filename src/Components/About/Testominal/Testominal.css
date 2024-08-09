@@ -1,0 +1,95 @@
+/* Testimonial.css */
+.testimonial {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.testimonial-image {
+  flex: 0.10;
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #ffea00;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+.star{
+  color: #ffea00;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial-content h6 {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+
+
+
+/* TestimonialsSlider.css */
+.client-testimonials {
+  position: relative;
+  overflow: hidden;
+  width: 40%; /* Adjust width as needed */
+  max-width: 40%; /* Maximum width */
+  margin: 0 auto; /* Center align */
+  background:  #ffea00; /* Background color */
+  padding: 2rem; /* Padding for content */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+
+.testimonials-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /* Adjust based on the number of slides */
+ 
+}
+
+.testimonial-slide {
+  min-width: 50%; /* Display two testimonials at a time */
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.testimonial-slide.active {
+  opacity: 1;
+  display: block;
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.testimonial-content {
+  margin-left: 1rem;
+}
+
+.testimonial-content p {
+  margin: 0;
+}
+
+.testimonial-content h6 {
+  margin-top: 0.5rem;
+}
+
